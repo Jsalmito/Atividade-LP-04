@@ -1,13 +1,111 @@
-body{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+*{
     padding:0;
+    margin:0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.ps {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;  
+}
+
+.img {
+    /* background-color: green; */
+    width: 100px;
+    height: 40px;
+
     
 }
 
-.nav{
-    display: block;
-    text-decoration: none;
+#logo {
+    width: 58px;
+    height: 30px;
+    padding:5px;
+    
 }
-.form{
+
+
+.nav {
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+        
+}
+
+ul {
+    list-style: none;    
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 5px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background-color: white;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #f6f6f6;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* formulario */
+
+.formulario {
     display: flex;
+    height: 600px;
+    justify-content: center;
+    
+    
+
+}
+
+.box-foto {
+    padding-top: 322px;  
+    padding-right: 110px;
+}
+
+.perfil{
+    width: 450px;
+
+}
+
+.box-form {
+    background-color: red;
+    padding: 20px;
+    
+    
+}
+
+.form{
+    background-color:rgb(138, 225, 141);
+    width: 350px;
+    height: 450px;
+    margin-top: 30px;
+    padding: 20px;
 }

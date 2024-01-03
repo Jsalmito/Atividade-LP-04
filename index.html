@@ -1,51 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Atividade - Landing Page</title>
 </head>
 <body>
     <div>
         <!-- Barra de Navegação -->
-        <div class="nav">
-            <nav>
-                <a href="">Services</a>
-                <a href="">Health & Wellness</a>
-                <a href="">Resources</a>
-                <a href="">Help Center & Safety</a>
-            </nav>
+        <div class="ps">
+
+            <!-- Logo -->
+            <div class="img">
+                <img id="logo" src="./Assets/logo.png" alt="">
+            </div>
+        
+            <!-- menu de navegação -->
+            <div class="nav">
+        
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Adoption</a></li>
+                                <li><a href="#">Work with us</a></li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <a href="#">Health & Wellness</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Link 01</a></li>
+                                <li><a href="#">Link 02</a></li>
+                            </ul>
+                        </li>
+        
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Help Center & Safety</a></li>
+                        <li><a href="#">Become a Caregiver</a></li>
+                        <li>
+                            <a href="#">My account</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <input type="email" name="" id="" placeholder="Email">
+                                    <input type="password" name="" id="" placeholder="password">
+                                    <button>Sign in</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+        
+            </div>
         </div>
         <!-- Barra de Navegação -->
 
         <!-- Formulário -->
-        <div>
-            <div>
-                <p>Fotos</p>
+        <div class="formulario">
+
+            <div class="box-foto">
+                <img class="perfil" src="/Assets/foto_perfil.png" alt="">
             </div>
-            <div class="form">
+            
+            <div class="box-form">
+
+            <form class="form">
                 <p>Please enter your name as it appears on your ID.</p><br>
                 <label for=""></label>
                 <input type="text" placeholder="Legal first Name"><br>
-
+            
                 <label for=""></label>
                 <input type="text" placeholder="Legal middle Name"><br>
-
+            
                 <label for=""></label>
                 <input type="text" placeholder="Legal last Name"><br>
-
+            
                 <label for=""></label>
                 <input type="email" placeholder="Email address"><br>
-
+            
                 <label for=""></label>
                 <input type="text" placeholder="Phone number"><br>
-
-                    <div>
-                        <p>By submitting my phone number, I agree to receive automated and non-automated transactional and marketing calls/texts from Wag!. Consent not required: text STOP to 24006 to opt out. Opt out instructions subject to change. Message and </p>
-                    </div>         
-
+            
+                <div>
+                    <p>By submitting my phone number, I agree to receive automated and non-automated transactional and marketing
+                        calls/texts from Wag!. Consent not required: text STOP to 24006 to opt out. Opt out instructions subject to
+                        change. Message and </p>
+                </div>
+            </form>
+                
             </div>
+
+            
+
         </div>
         <!-- Formulário -->
 
