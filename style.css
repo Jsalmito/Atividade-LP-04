@@ -33,16 +33,16 @@
 
 }
 
-ul {
+.nav ul {
     list-style: none;
 }
 
-ul li {
+.nav ul li {
     display: inline-block;
     position: relative;
 }
 
-ul li a {
+.nav ul li a {
     display: block;
     padding: 10px 5px;
     color: black;
@@ -52,23 +52,23 @@ ul li a {
 
 }
 
-ul li ul.dropdown li {
+.nav ul li ul.dropdown li {
     display: block;
     background-color: white;
 }
 
-ul li ul.dropdown {
+.nav ul li ul.dropdown {
     width: 100%;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-ul li a:hover {
+.nav ul li a:hover {
     background: #f6f6f6;
 }
 
-ul li:hover ul.dropdown {
+.nav ul li:hover ul.dropdown {
     display: block;
 }
 
@@ -218,24 +218,204 @@ ul li:hover ul.dropdown {
 
 .fb-cards {
     display: flex;
-    padding-top: 30px;
+    padding: 30px 60px 30px 60px;
     justify-content: center;
+    margin:20px
 }
 
 .fb-box-card {
+    margin:0 10px;
     width: 300px;
-    padding: 10px 10px 10px 10px;
+    height: 150px;
+    padding: 20px 20px 0 20px;
     box-shadow: 0 0 5px #777;
-    text-align: justify;
+    text-align:left;
+    display: flex;
+}
+
+.fb-box-card p {
+    font-size: 12px;
+    
+}
+
+.fb-box-card img {
+    width: 100px;
+    height:90px;
 }
 
 /* detalhes */
 
 .detalhes {
     background-color: #3a5080;
+    padding: 30px 150px 110px 150px;
+    height: 400px;
 }
 
 .det-title {
     text-align: center;
     color:white;
+    padding-bottom: 30px;
+}
+
+.det-subtitle  {
+    font-style: italic;
+    color:#fbecb9;
+    
+}
+
+.det-box-card {
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    
+    
+}
+
+.det-card {
+    width: 200px;
+    padding: 0 30px 0 30px;
+}
+
+.det-card h1 {
+    color:#fbecb9;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.det-txt-card {
+    color:white;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.det-btn {
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.det-btn button {
+    text-align: center;
+    background-color:#fbecb9;
+    width: 120px;
+    height: 32px;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.det-btn button a {
+    text-decoration: none;
+    color:#85623e;
+}
+
+.det-faq {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    padding: 40px 0 100px 0;
+    justify-content: center;
+}
+
+.bg-footer {
+    background-color: #ededed;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.footer ul li a {
+        text-decoration: none;
+        color:#9f9f9f;
+}
+
+.footer ul li a:hover {
+    color:#676666;
+}
+
+.footer h5 {
+    color:#00bf8f;
+    padding: 0 0 15px;
+    font-size: 15px;
+}
+
+.footer hr {
+    width: 300px;
+}
+
+.ft-download-app {
+    padding: 0 60px 0 5px;
+    width: 200px;
+    height: 370px;
+    
+    
+}
+
+.ft-download-app p {
+    margin-top: 100px;
+    color:#9f9f9f;
+    font-weight: bold;
+}
+
+.ft-download-app img {
+    width: 120px;
+    padding: 3px;
+}
+
+.ft-card {
+    padding: 0;
+    width: 200px;
+    
+}
+
+/* direitos reservados */
+
+.rights {
+    display: flex;
+    height: 100px;
+    margin: 0 150px;
+    justify-content: space-between;
+    color:#9f9f9f;
+    align-items: center;
+}
+
+.rights a {
+    text-decoration: none;
+    color:#9f9f9f;
+    
+}
+
+.reserved {
+    display: flex;
+    font-size: 14px;
+}
+
+.reserved nav a {
+    padding: 0 30px;
+}
+
+.reserved nav a:hover {
+    color:#676666;
+}
+
+.socials a img {
+    width: 25px;
+    padding: 0 5px;
+    color:rgba(240,240,240,0.5);
+    
 }
