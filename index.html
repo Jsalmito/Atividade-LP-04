@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Atividade - Landing Page</title>
 </head>
+
 <body>
     <div>
         <!-- Barra de Navegação -->
@@ -15,10 +17,10 @@
             <div class="img">
                 <img id="logo" src="./Assets/logo.png" alt="">
             </div>
-        
+
             <!-- menu de navegação -->
             <div class="nav">
-        
+
                 <nav>
                     <ul>
                         <li>
@@ -28,7 +30,7 @@
                                 <li><a href="#">Work with us</a></li>
                             </ul>
                         </li>
-        
+
                         <li>
                             <a href="#">Health & Wellness</a>
                             <ul class="dropdown">
@@ -36,7 +38,7 @@
                                 <li><a href="#">Link 02</a></li>
                             </ul>
                         </li>
-        
+
                         <li><a href="#">Resources</a></li>
                         <li><a href="#">Help Center & Safety</a></li>
                         <li><a href="#">Become a Caregiver</a></li>
@@ -52,121 +54,140 @@
                         </li>
                     </ul>
                 </nav>
-        
+
             </div>
         </div>
         <!-- Barra de Navegação -->
 
-        <!-- Formulário -->
-        <div class="formulario">
+        <!-- Cadastro -->
+        <div class="cadastro">
 
-            <div class="box-foto">
-                <img class="perfil" src="/Assets/foto_perfil.png" alt="">
+            <div class="img-cadastro">
+                <img src="/Assets/foto_perfil.png" alt="">
             </div>
-            
-            <div class="box-form">
 
-            <form class="form">
-                <p>Please enter your name as it appears on your ID.</p><br>
-                <label for=""></label>
-                <input type="text" placeholder="Legal first Name"><br>
-            
-                <label for=""></label>
-                <input type="text" placeholder="Legal middle Name"><br>
-            
-                <label for=""></label>
-                <input type="text" placeholder="Legal last Name"><br>
-            
-                <label for=""></label>
-                <input type="email" placeholder="Email address"><br>
-            
-                <label for=""></label>
-                <input type="text" placeholder="Phone number"><br>
-            
-                <div>
-                    <p>By submitting my phone number, I agree to receive automated and non-automated transactional and marketing
-                        calls/texts from Wag!. Consent not required: text STOP to 24006 to opt out. Opt out instructions subject to
-                        change. Message and </p>
+            <div class="form-cadastro">
+                <form>
+                    <p class="form-title">Please enter your name as it appears on your ID.</p><br>
+
+                    <input type="text" placeholder="Legal first Name" class="input-cadastro"><br>
+
+                    <input type="text" placeholder="Legal middle Name" class="input-cadastro"><br>
+
+                    <input type="text" placeholder="Legal last Name" class="input-cadastro"><br>
+
+                    <input type="email" placeholder="Email address" class="input-cadastro"><br>
+
+                    <input type="number" placeholder="Phone number" class="input-cadastro"><br><br>
+
+                </form>
+
+                <div class="footer-cadastro">
+                    <p>By submitting my phone number, I agree to receive automated and non-automated transactional
+                        and marketing calls/texts from Wag!. Consent not required: text STOP to 24006 to opt out. Opt out
+                        instructions subject to change. Message and data rates may apply. 
+                        <a href="#">Mobile Terms</a> apply.</p><br>
+                    <p>
+                        <input type="checkbox" name="" id="">
+                        <label for="">I agree to Wag!'s <a href="#">Terms</a> (including a <a href="#">mutual arbitration
+                                clause</a> )
+                            and <a href="#"> Privacy
+                                Policy</a>.
+                        </label>
+                    </p><br>
+
+                    <p>
+                        <input type="checkbox" name="" id="">
+                        <label for="">I confirm that I am a US resident.</label> 
+                    </p><br>
+                    <input type="button" value="Get Started" class="btn-cadastro">
                 </div>
-            </form>
-                
-            </div>
 
-            
+            </div>
 
         </div>
-        <!-- Formulário -->
+        <!-- Cadastro -->
 
         <!-- Explicação -->
-        <div>
-            <div>
+        <div class="explicacao">
+            <div class="ex-title">
                 <h1>Why Wag!?</h1>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Flexibility</h4>
-                    <p>Make money on your own time. Set your own schedule. Enjoy the flexibility of choosing how and when you want to work-grab a last minute ASAP walk or plan out walks weeks in advance!</p>
+            <div class="ex-cards">
+                <div class="ex-box">
+                    <img src="./Assets/Flexibility.png" alt=""><br>
+                    <h4>Flexibility</h4><br>
+                    <p>Make money on your own time. Set your own schedule. Enjoy the flexibility of choosing how and
+                        when you want to work-grab a last minute ASAP walk or plan out walks weeks in advance!</p>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <h4>Technology</h4>
-                    <p>Wag! is a fast, friendly and convenient platform that offers instant pay, real-time GPS traking, automated report cards and live chat with clients.</p>
+                <div class="ex-box">
+                    <img src="./Assets/Technology.png" alt=""><br>
+                    <h4>Technology</h4><br>
+                    <p>Wag! is a fast, friendly and convenient platform that offers instant pay, real-time GPS traking,
+                        automated report cards and live chat with clients.</p>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <h4>Safety</h4>
-                    <p>Our dedicated 24/7 customer support team sticks by you, and services booked on the Wag! Platfomr may be protected with up to $1M property damage protection. See the <a href="">customer claims policy</a> for details.</p>
+                <div class="ex-box">
+                    <img src="/Assets/Safety.png" alt="">
+                    <h4>Safety</h4><br>
+                    <p>Our dedicated 24/7 customer support team sticks by you, and services booked on the Wag! Platfomr
+                        may be protected with up to $1M property damage protection. See the <a href="">customer claims
+                            policy</a> for details.</p>
                 </div>
             </div>
         </div>
         <!-- Explicação -->
 
         <!-- Serviço -->
-        <div>
-            <div>
-                <h2>Love dogs? Get paid for it!</h2>
-                <p>Caring for dogs is what you do best. Connecting dog walkers, sitters and trainers with a nationwide commuty of pet parents who have dog walking, overnight sitting & boarding, or training needs is what we do best. Build your business and become your own boss with Wag!</p>
-                <a href="">Meet some Pet Caregivers who walk for Wag!</a>
+        <div class="servico">
+            <div class="box-servico-1">
+                <h1>Love dogs? Get paid for it!</h1><br>
+                <p>Caring for dogs is what you do best. Connecting dog walkers, sitters and trainers with a nationwide
+                    commuty of pet parents who have dog walking, overnight sitting & boarding, or training needs is what
+                    we do best. Build your business and become your own boss with Wag!</p><br>
+                <a href="#">Meet some Pet Caregivers who walk for Wag!</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="box-servico-2">
+                <img src="./Assets/girl-dog.png" alt="" class="img-servico">
             </div>
         </div>
         <!-- Serviço -->
 
         <!-- Feedback -->
         <div>
-            <div>
-                <h2>Hear from Pet Caregivers like you</h2>
+            <div class="fb-title">
+                <h1>Hear from Pet Caregivers like you</h1>
             </div>
-            <div>
+
+            <div class="fb-cards">
                 <div>
-                    <div>
-                        <p>I'm getting paid to hang out with dogs, explore LA, get some sunshine, get some exercise. It's a really awesome gig!</p>
+                    <div class="fb-box-card">
+                        <p>I'm getting paid to hang out with dogs, explore LA, get some sunshine, get some exercise.
+                            It's a really awesome gig!</p>
                         <p>Katie M. Dog Walker in Los Angeles.</p>
                     </div>
                     <div>
                         <img src="" alt="">
                     </div>
                 </div>
-                    
+
                 <div>
-                    <div>
-                        <p>Wag! motivates me to get out & be active. Some of my favorite NY memories are because of Wag! and my furry friends.</p>
+                    <div class="fb-box-card">
+                        <p>Wag! motivates me to get out & be active. Some of my favorite NY memories are because of Wag!
+                            and my furry friends.</p>
                         <p>Kelsey V. Dog Walker in New York.</p>
                     </div>
                     <div>
                         <img src="" alt="">
                     </div>
                 </div>
-                
+
                 <div>
-                    <div>
-                        <p>One of the things that i love about working for Wag! is that it's literally my job to go hang out with other people's dogs.</p>
+                    <div class="fb-box-card">
+                        <p>One of the things that i love about working for Wag! is that it's literally my job to go hang
+                            out with other people's dogs.</p>
                         <p>Rachel R. Dog walker in Whichita, Kansas.</p>
                     </div>
                     <div>
@@ -178,9 +199,9 @@
         <!-- Feedback -->
 
         <!-- Detalhes -->
-        <div>
-            <div>
-                <h2>We've been around the block</h2>
+        <div class="detalhes">
+            <div class="det-title">
+                <h1>We've been around the block</h1>
             </div>
 
             <div>
@@ -192,23 +213,27 @@
 
                 <div>
                     <h3>4.6k+</h3>
-                    <p>Pet Caregivers with Wag! have a trusted record of experience with over 10 million pet care services, including Sitting, Walking, Boarding & Training, across 4,600+ cities in all 50 U.S. states.</p>
+                    <p>Pet Caregivers with Wag! have a trusted record of experience with over 10 million pet care
+                        services, including Sitting, Walking, Boarding & Training, across 4,600+ cities in all 50 U.S.
+                        states.</p>
                 </div>
 
                 <div>
                     <h3>10M+</h3>
                     <p>Meals donated</p>
-                    <p>We've donated over 10 million meals! A portion of our proceeds from the walks you book help to feed shelter dogs in your area.</p>
+                    <p>We've donated over 10 million meals! A portion of our proceeds from the walks you book help to
+                        feed shelter dogs in your area.</p>
                 </div>
 
                 <div>
                     <h3>99%</h3>
                     <p>5-star reviews</p>
-                    <p>Making Pet Parents happy is what we do best -- 99% of Wag! services result in a 5-star reviews</p>
+                    <p>Making Pet Parents happy is what we do best -- 99% of Wag! services result in a 5-star reviews
+                    </p>
                 </div>
 
             </div>
-            
+
             <div>
                 <div>
                     <button>Sign now</button>
@@ -245,8 +270,8 @@
                         <li><a href="">Careers</a></li>
                         <li><a href="">Become a Dog Walker</a></li>
                     </ul>
-                    
-                    
+
+
                 </div>
 
                 <div>
@@ -282,7 +307,7 @@
                 <div>
                     <h5>Lifestyle</h5>
                     <ul>
-                    <li><a href="">Dog Beaches</a></li>
+                        <li><a href="">Dog Beaches</a></li>
                         <li><a href="">Dog Campground</a></li>
                         <li><a href="">Dog Parks</a></li>
                         <li><a href="">Dog Trails</a></li>
@@ -291,21 +316,21 @@
                     <h5>Security</h5>
                     <ul>
                         <li><a href="">Responsible disclosure</a></li>
-                   </ul>
+                    </ul>
 
                 </div>
             </div>
-<hr>
+            <hr>
 
             <div>
                 <div>
                     <p>2022 Wag Labs, Inc. All rights reserved.</p>
-                        <nav>
-                            <a href="">Privacy policy</a>
-                            <a href="">CA Privacy</a>
-                            <a href="">Terms & conditions</a>
-                            <a href="">Accessibility</a>
-                        </nav>
+                    <nav>
+                        <a href="">Privacy policy</a>
+                        <a href="">CA Privacy</a>
+                        <a href="">Terms & conditions</a>
+                        <a href="">Accessibility</a>
+                    </nav>
                 </div>
 
                 <div>
@@ -314,7 +339,7 @@
                     <a href=""><img src="" alt="Twitter"></a>
                     <a href=""><img src="" alt="Tiktok"></a>
                 </div>
-                
+
 
 
             </div>
@@ -322,4 +347,5 @@
         <!-- Footer -->
     </div>
 </body>
+
 </html>

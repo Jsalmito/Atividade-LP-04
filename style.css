@@ -1,42 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     font-family: 'Fredoka', sans-serif;
 }
 
 .ps {
     display: flex;
     margin-left: 20px;
-    margin-top: 10px;  
+    margin-top: 10px;
 }
 
 .img {
-    /* background-color: green; */
     width: 100px;
     height: 40px;
 
-    
+
 }
 
 #logo {
     width: 58px;
     height: 30px;
-    padding:5px;
-    
+    padding: 5px;
+
 }
 
 
 .nav {
-    /* background-color: red; */
     justify-content: center;
     align-items: center;
-        
+
 }
 
 ul {
-    list-style: none;    
+    list-style: none;
 }
 
 ul li {
@@ -47,11 +45,11 @@ ul li {
 ul li a {
     display: block;
     padding: 10px 5px;
-    color:black;
+    color: black;
     text-decoration: none;
     text-align: center;
     font-size: 13px;
-    
+
 }
 
 ul li ul.dropdown li {
@@ -74,38 +72,170 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
-/* formulario */
-
-.formulario {
+/* cadastro */
+.cadastro {
     display: flex;
-    height: 600px;
+    margin-top: 20px;
     justify-content: center;
-    
-    
 
 }
 
-.box-foto {
-    padding-top: 322px;  
-    padding-right: 110px;
+.img-cadastro {
+    padding: 200px 100px 200px 200px;    
+    margin-left: -200px;
 }
 
-.perfil{
+.img-cadastro img{
     width: 450px;
-
+    
 }
 
-.box-form {
-    background-color: red;
-    padding: 20px;
+.form-cadastro {
+    background-color: rgb(245, 245, 245);
+    width: 310px;
+    box-shadow: 0 0 5px #777;
+    margin-left: 30px;
+    border-radius: 3px;
+    padding: 20px 60px 30px 30px;
+    margin-left: 80px;
+}
+
+.form-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-cadastro {
+    margin: 5px 0;
+    padding: 10px 27px 10px 8px;
+    width: 210px;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+}
+
+.footer-cadastro {
+    width: 315px;
+    text-align: justify;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.footer-cadastro a{
+    text-decoration: none;
+    color:#16c398;
+}
+
+.btn-cadastro {
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    background-color: #d1d1d1;
+    font-weight: bold;
+    color:#adadad;
+}
+
+/* explicacao */
+
+.ex-title {
+    padding-top:30px;
+    text-align: center;
+    color:#727272;
+    font-size: 25px;
+    
+}
+
+.ex-cards {
+    display: flex;
+    padding: 30px 100px 30px 100px;
+    justify-content: center;
+}
+
+.ex-box {
+    text-align: center;
+    font-size: 14px;
+    padding: 50px;
+    width: 300px;
     
     
 }
 
-.form{
-    background-color:rgb(138, 225, 141);
-    width: 350px;
-    height: 450px;
-    margin-top: 30px;
-    padding: 20px;
+.ex-box a {
+    text-decoration: none;
+    color:#16c398;
+}
+
+.ex-box img {
+    width: 100px;
+}
+
+/* serviço */
+
+.servico {
+    /* background-color: #ededed; */
+    display: flex;
+    justify-content: center;
+    height: 520px;
+    background-image: url(./Assets/bg-servico.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.servico a{
+    text-decoration: none;
+    color:#16c398;
+    font-weight: bold;
+}
+
+.box-servico-1 {
+    width: 600px;
+    padding: 50px 100px 0px 100px;
+    color:#727272;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box-servico-2 {
+    padding: 50px 100px 0px 0px;
+}
+
+.box-servico-1 p {
+    text-align: justify;
+}
+
+.img-servico {
+    width: 400px;
+}
+
+/* feedback */
+
+.fb-title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fb-cards {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.fb-box-card {
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #777;
+    text-align: justify;
+}
+
+/* detalhes */
+
+.detalhes {
+    background-color: #3a5080;
+}
+
+.det-title {
+    text-align: center;
+    color:white;
 }
