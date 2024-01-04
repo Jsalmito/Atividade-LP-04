@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Fredoka', sans-serif;
+
 }
 
 .ps {
@@ -81,13 +82,13 @@
 }
 
 .img-cadastro {
-    padding: 200px 100px 200px 200px;    
+    padding: 200px 100px 200px 200px;
     margin-left: -200px;
 }
 
-.img-cadastro img{
+.img-cadastro img {
     width: 450px;
-    
+
 }
 
 .form-cadastro {
@@ -121,9 +122,9 @@
     font-weight: bold;
 }
 
-.footer-cadastro a{
+.footer-cadastro a {
     text-decoration: none;
-    color:#16c398;
+    color: #16c398;
 }
 
 .btn-cadastro {
@@ -133,17 +134,30 @@
     border-radius: 7px;
     background-color: #d1d1d1;
     font-weight: bold;
-    color:#adadad;
+    color: #adadad;
+
 }
+
+.btn-cadastro a {
+    text-decoration: none;
+    color: rgba(10, 10, 10, 0.3);
+}
+
+.btn-cadastro a:hover {
+    color: #676666;
+}
+
+
+
 
 /* explicacao */
 
 .ex-title {
-    padding-top:30px;
+    padding-top: 30px;
     text-align: center;
-    color:#727272;
+    color: #727272;
     font-size: 25px;
-    
+
 }
 
 .ex-cards {
@@ -157,13 +171,13 @@
     font-size: 14px;
     padding: 50px;
     width: 300px;
-    
-    
+
+
 }
 
 .ex-box a {
     text-decoration: none;
-    color:#16c398;
+    color: #16c398;
 }
 
 .ex-box img {
@@ -179,22 +193,27 @@
     height: 520px;
     background-image: url(./Assets/bg-servico.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
-}
-
-.servico a{
-    text-decoration: none;
-    color:#16c398;
-    font-weight: bold;
 }
 
 .box-servico-1 {
     width: 600px;
     padding: 50px 100px 0px 100px;
-    color:#727272;
+    color: #727272;
     font-weight: bold;
     font-size: 14px;
+}
+
+.box-servico-1 a {
+    text-decoration: none;
+    color: #16c398;
+    font-weight: bold;
+}
+
+.box-servico-1 a:hover {
+    color: #0e775d;
+    
 }
 
 .box-servico-2 {
@@ -214,33 +233,45 @@
 .fb-title {
     text-align: center;
     padding-top: 50px;
+    color: #767676;
 }
 
 .fb-cards {
     display: flex;
     padding: 30px 60px 30px 60px;
     justify-content: center;
-    margin:20px
+    margin: 20px
 }
 
 .fb-box-card {
-    margin:0 10px;
-    width: 300px;
-    height: 150px;
+    margin: 0 10px;
+    width: 230px;
+    height: 120px;
     padding: 20px 20px 0 20px;
-    box-shadow: 0 0 5px #777;
-    text-align:left;
+    box-shadow: 0 0 10px 0 #d6d4d4;
+    text-align: left;
     display: flex;
+    font-style: italic;
+    border-radius: 5px;
+
+}
+
+.fb-name {
+    /* background-color: red; */
+    width: 300px;
+    text-align: center;
+    position:absolute;
+    margin-top: 120px;
 }
 
 .fb-box-card p {
     font-size: 12px;
-    
+
 }
 
 .fb-box-card img {
     width: 100px;
-    height:90px;
+    height: 90px;
 }
 
 /* detalhes */
@@ -253,14 +284,14 @@
 
 .det-title {
     text-align: center;
-    color:white;
+    color: white;
     padding-bottom: 30px;
 }
 
-.det-subtitle  {
+.det-subtitle {
     font-style: italic;
-    color:#fbecb9;
-    
+    color: #fbecb9;
+
 }
 
 .det-box-card {
@@ -269,8 +300,8 @@
     text-align: center;
     justify-content: center;
     padding: 20px;
-    
-    
+
+
 }
 
 .det-card {
@@ -279,14 +310,14 @@
 }
 
 .det-card h1 {
-    color:#fbecb9;
+    color: #fbecb9;
     font-style: italic;
     font-size: 50px;
     font-weight: lighter;
 }
 
 .det-txt-card {
-    color:white;
+    color: white;
     font-size: 14px;
     padding-top: 20px;
 }
@@ -298,17 +329,17 @@
 
 .det-btn button {
     text-align: center;
-    background-color:#fbecb9;
+    background-color: #fbecb9;
     width: 120px;
     height: 32px;
-    border:none;
+    border: none;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .det-btn button a {
     text-decoration: none;
-    color:#85623e;
+    color: #85623e;
 }
 
 .det-faq {
@@ -335,52 +366,53 @@
 }
 
 .footer ul li {
-    font-size: 13px;
+    font-size: 12px;
     padding: 5px;
+
 }
 
 .footer ul li a {
-        text-decoration: none;
-        color:#9f9f9f;
+    text-decoration: none;
+    color: #9f9f9f;
 }
 
 .footer ul li a:hover {
-    color:#676666;
+    color: #676666;
 }
 
 .footer h5 {
-    color:#00bf8f;
+    color: #00bf8f;
     padding: 0 0 15px;
     font-size: 15px;
-}
-
-.footer hr {
-    width: 300px;
 }
 
 .ft-download-app {
     padding: 0 60px 0 5px;
     width: 200px;
     height: 370px;
-    
-    
+
 }
 
 .ft-download-app p {
     margin-top: 100px;
-    color:#9f9f9f;
-    font-weight: bold;
+    color: #9f9f9f;
+    font-size: 16px;
 }
 
 .ft-download-app img {
-    width: 120px;
+    width: 100px;
     padding: 3px;
 }
 
 .ft-card {
     padding: 0;
     width: 200px;
-    
+
+}
+
+/* separador */
+hr {
+    margin: 0 80px 0 80px;
 }
 
 /* direitos reservados */
@@ -388,21 +420,24 @@
 .rights {
     display: flex;
     height: 100px;
-    margin: 0 150px;
+    margin: 0 80px;
     justify-content: space-between;
-    color:#9f9f9f;
+    color: #9f9f9f;
     align-items: center;
 }
 
 .rights a {
     text-decoration: none;
-    color:#9f9f9f;
-    
+    color: #9f9f9f;
+
 }
 
 .reserved {
+    padding: 10px;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
+
+
 }
 
 .reserved nav a {
@@ -410,12 +445,16 @@
 }
 
 .reserved nav a:hover {
-    color:#676666;
+    color: #676666;
+}
+
+.socials {
+    padding: 10px;
+    width: 180px;
 }
 
 .socials a img {
     width: 25px;
     padding: 0 5px;
-    color:rgba(240,240,240,0.5);
-    
+
 }
