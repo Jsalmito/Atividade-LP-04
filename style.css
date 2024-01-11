@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
 
 * {
     padding: 0;
@@ -71,6 +71,94 @@
 .nav ul li:hover ul.dropdown {
     display: block;
 }
+
+/* menu lado direito */
+
+.nv-d .btn-green {
+    color:#16c398;
+}
+
+.nv-d {
+    justify-content:center;
+    align-items: center;
+    margin-left: 600px;
+}
+
+.icon {
+    width: 18%;
+}
+
+.nv-d ul {
+    list-style: none;
+}
+
+.nv-d ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.nv-d ul li a {
+    display: block;
+    font-size: 13px;
+    padding: 10px 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+.nv-d ul li ul.dropdown li {
+    display: block;
+        
+}
+
+.nv-d ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.nv-d ul li a:hover {
+    background: #f6f6f6;
+}
+
+.nv-d ul li:hover ul.dropdown {
+    background-color: rgb(245, 245, 245);
+    display: block;
+    padding: 10px;
+    width: 180px;
+    height: 100px;
+    box-shadow: 0 0 2px;
+}
+
+.nv-d ul li:hover ul.dropdown input {
+    display: flex;
+    background-color:white;
+    margin-top: 5px;
+    border-radius: 4px;
+    border:none;
+    border: 1px solid #dad9d9;
+    width: 180px;
+    height: 25px;
+        
+}
+
+.nv-d ul li:hover ul.dropdown button {
+    margin-top: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+    border:none;
+    background-color: #dad9d9;
+    color: #777;
+}
+
+
+
+
 
 /* cadastro */
 .cadastro {
