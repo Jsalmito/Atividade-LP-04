@@ -4,158 +4,97 @@
     padding: 0;
     margin: 0;
     font-family: 'Fredoka', sans-serif;
+    
 }
 
-.ps {
-    display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
-}
+/* navegação */
 
-.img {
-    width: 100px;
-    height: 40px;
-
-
-}
-
-#logo {
-    width: 58px;
-    height: 30px;
-    padding: 5px;
-
-}
-
-
-.nav {
-    justify-content: center;
+.nav-header {
+    width:80vw;
+    display: inline-flex;
     align-items: center;
-
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
 }
 
-.nav ul {
+.nav-header a:hover {
+    color:rgba(180, 180, 180, .8)
+}
+
+/* menu - esquerda */
+
+.nav-e svg {
+    width: 10px;
+    padding-left: 6px;
+}
+
+
+.nav-e ul {
+    display:flex;
     list-style: none;
+    align-items: center;
+       
 }
 
-.nav ul li {
-    display: inline-block;
+.nav-e ul li a {
+    padding-left: 17px;
+    text-decoration: none;
+    color:rgba(10, 10, 10, 0.8);
+}
+
+.nav-e img{
+    width: 55px;
+    align-items: center;
+}
+
+/* menu - direita */
+
+.nav-d {
+    margin-right: -280px;
+}
+
+.nav-d ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+   
+}
+
+.nav-d ul li a {
+    margin-right: 50px;
+    text-decoration: none;
+    height: 30px;
+    
+}
+
+.arrow {
+    width: 10px;
+    padding-left: 6px;
+    
+}
+
+.user-icon {
+    width: 18px;
+    margin-right: 10px;
+    align-items: center;
     position: relative;
 }
 
-.nav ul li a {
-    display: block;
-    padding: 10px 5px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-size: 13px;
-
+.heart {
+    width: 18px;
+    margin-right: 10px;
+    position: relative;
+       
 }
 
-.nav ul li ul.dropdown li {
-    display: block;
-    background-color: white;
+.account {
+    color:rgba(10, 10, 10, 0.8);
 }
 
-.nav ul li ul.dropdown {
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-.nav ul li a:hover {
-    background: #f6f6f6;
-}
-
-.nav ul li:hover ul.dropdown {
-    display: block;
-}
-
-/* menu lado direito */
-
-.nv-d .btn-green {
+.btn-green {
     color:#16c398;
 }
-
-.nv-d {
-    justify-content:center;
-    align-items: center;
-    margin-left: 600px;
-}
-
-.icon {
-    width: 18%;
-}
-
-.nv-d ul {
-    list-style: none;
-}
-
-.nv-d ul li {
-    display: inline-block;
-    position: relative;
-    
-}
-
-.nv-d ul li a {
-    display: block;
-    font-size: 13px;
-    padding: 10px 5px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    
-    
-}
-
-.nv-d ul li ul.dropdown li {
-    display: block;
-        
-}
-
-.nv-d ul li ul.dropdown {
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-.nv-d ul li a:hover {
-    background: #f6f6f6;
-}
-
-.nv-d ul li:hover ul.dropdown {
-    background-color: rgb(245, 245, 245);
-    display: block;
-    padding: 10px;
-    width: 180px;
-    height: 100px;
-    box-shadow: 0 0 2px;
-}
-
-.nv-d ul li:hover ul.dropdown input {
-    display: flex;
-    background-color:white;
-    margin-top: 5px;
-    border-radius: 4px;
-    border:none;
-    border: 1px solid #dad9d9;
-    width: 180px;
-    height: 25px;
-        
-}
-
-.nv-d ul li:hover ul.dropdown button {
-    margin-top: 10px;
-    width: 60px;
-    height: 25px;
-    border-radius: 3px;
-    border:none;
-    background-color: #dad9d9;
-    color: #777;
-}
-
 
 
 
@@ -180,33 +119,69 @@
 
 .form-cadastro {
     background-color: rgb(245, 245, 245);
-    width: 310px;
+    width: 325px;
     box-shadow: 0 0 5px #777;
     margin-left: 30px;
     border-radius: 3px;
     padding: 20px 60px 30px 30px;
     margin-left: 80px;
+    display: inline-block;
+}
+
+.qrcode {
+    background-color: white;
+    justify-content: center;
+    width: 80px;
+    height: 130px;
+    padding: 10px 5px;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 270px;
+    margin-top: -276px;
+    margin-bottom: 80px;
+}
+
+.qrcode img {
+    width: 80px;
+    
+}
+
+.qrcode p {
+    color:rgba(10, 10, 10, 0.5);
+    font-size: 12px;
+    text-align: center;
+    position: relative;
 }
 
 .form-title {
     font-size: 14px;
-    font-weight: 600;
+    color:rgba(10, 10, 10, 0.5);
     margin-top: 10px;
+    font-weight: bold;
 }
 
-.input-cadastro {
+.form-cadastro form input {
     margin: 5px 0;
     padding: 10px 27px 10px 8px;
     width: 210px;
     border-radius: 5px;
-    border: 1px solid #bebebe;
+    border: 1px solid rgba(225, 225, 225);
+    font-size: 17px;
+    
+}
+
+.form-cadastro form input::placeholder{
+    color:rgba(10, 10, 10, 0.2)
 }
 
 .footer-cadastro {
-    width: 315px;
+    width: 330px;
     text-align: justify;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight:500;
+    color:rgba(10, 10, 10, 0.5);
+    padding-top:40px;
+        
 }
 
 .footer-cadastro a{
@@ -216,12 +191,15 @@
 
 .btn-cadastro {
     margin-top: 10px;
-    padding: 10px 20px 10px 20px;
+    padding:8px 20px;
     border: 1px solid #d1d1d1;
     border-radius: 7px;
     background-color: #d1d1d1;
-    font-weight: bold;
     color:#adadad;
+}
+
+.btn-cadastro a:hover {
+    color:#4a4a4a;
 }
 
 /* explicacao */
@@ -245,7 +223,7 @@
     font-size: 14px;
     padding: 50px;
     width: 300px;
-    
+    color:rgba(10, 10, 10, 0.5);
     
 }
 
@@ -261,7 +239,6 @@
 /* serviço */
 
 .servico {
-    /* background-color: #ededed; */
     display: flex;
     justify-content: center;
     height: 520px;
@@ -274,15 +251,18 @@
 .servico a{
     text-decoration: none;
     color:#16c398;
-    font-weight: bold;
+    
+}
+
+.box-servico-1 h1 {
+    font-size: 40px;
 }
 
 .box-servico-1 {
     width: 600px;
     padding: 50px 100px 0px 100px;
     color:#727272;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .box-servico-2 {
@@ -302,6 +282,7 @@
 .fb-title {
     text-align: center;
     padding-top: 50px;
+    color:rgba(10,10,10,0.6)
 }
 
 .fb-cards {
@@ -313,22 +294,36 @@
 
 .fb-box-card {
     margin:0 10px;
-    width: 300px;
-    height: 150px;
+    width: 330px;
+    height: 160px;
     padding: 20px 20px 0 20px;
-    box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #a9a8a8;
     text-align:left;
     display: flex;
+    border-radius: 5px;
+    color:rgba(10,10,10,0.5)
 }
 
 .fb-box-card p {
-    font-size: 12px;
+    font-size: 15px;
     
 }
 
+.box-name {
+    width: 300px;
+    margin:auto;
+    padding: 10px 0;
+    color:rgba(10,10,10,0.5)
+}
+
+.box-txt {
+    font-style: italic;
+    padding-right: 10px;
+}
+
 .fb-box-card img {
-    width: 100px;
-    height:90px;
+    width: 120px;
+    
 }
 
 /* detalhes */
@@ -408,6 +403,13 @@
 
 /* footer */
 
+hr {
+    /* width: 800px; */
+    height: 1px;
+    text-align: center;
+    margin: 0 150px;
+}
+
 .footer {
     display: flex;
     padding: 40px 0 100px 0;
@@ -457,7 +459,7 @@
 .ft-download-app p {
     margin-top: 100px;
     color:#9f9f9f;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .ft-download-app img {
@@ -480,6 +482,7 @@
     justify-content: space-between;
     color:#9f9f9f;
     align-items: center;
+    
 }
 
 .rights a {
@@ -490,7 +493,7 @@
 
 .reserved {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .reserved nav a {
